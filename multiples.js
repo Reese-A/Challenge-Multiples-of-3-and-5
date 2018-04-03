@@ -7,6 +7,13 @@ exports.sumOfAMultiple = function( n ) {
   var sum = 0;
 
   // do your work here
-
+for(let i=0; i<n;i++){
+  if(i % 3 === 0 || i % 5 === 0){
+    sum += i;
+  }
+}
   return sum;
 };
+
+console.log(exports.sumOfAMultiple(1000));
+console.log(exports.sumOfAMultiple(10000));
